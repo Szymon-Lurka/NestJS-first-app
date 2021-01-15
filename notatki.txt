@@ -1,0 +1,11 @@
+"migrations": ["dist/migration/*.js"],
+    "cli": {
+        "migrationsDir":"migration"
+    }
+- dopisać w ormconfig.json
+
+"typeorm:migration:generate": "ts-node ./node_modules/typeorm/cli.js migration:generate -n NewVersionOfShopItemEntity",
+    "typeorm:migration:run": "tsc && node ./node_modules/typeorm/cli.js migration:run",
+    "typeorm:migration:revert": "tsc && node ./node_modules/typeorm/cli.js migration:revert"
+
+- dopisać w package.json
